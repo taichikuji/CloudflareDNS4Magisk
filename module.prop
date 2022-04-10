@@ -1,6 +1,6 @@
-id=CloudflareDNS4Magisk
-name=CloudflareDNS4Magisk
-version=v2.7
-versionCode=27
-author=Rom
-description=Using the new Cloudflare DNS system-lessy! As simple as that.
+id=Quad9DNS4Magisk
+name=Quad9DNS4Magisk
+version=v1.0
+versionCode=10
+author=Taichi
+description=Using Quad9's DNS system-lessy! As simple as that.

@@ -7,26 +7,26 @@ MODDIR=${0%/*}
 # More info in the main Magisk thread
 
 # Set CF DNS servers address
-setprop net.eth0.dns1 1.1.1.1
-setprop net.eth0.dns2 1.0.0.1
+setprop net.eth0.dns1 9.9.9.9
+setprop net.eth0.dns2 149.112.112.112
 
-setprop net.dns1 1.1.1.1
-setprop net.dns2 1.0.0.1
+setprop net.dns1 9.9.9.9
+setprop net.dns2 149.112.112.112
 
-setprop net.ppp0.dns1 1.1.1.1
-setprop net.ppp0.dns2 1.0.0.1
+setprop net.ppp0.dns1 9.9.9.9
+setprop net.ppp0.dns2 149.112.112.112
 
-setprop net.rmnet0.dns1 1.1.1.1
-setprop net.rmnet0.dns2 1.0.0.1
+setprop net.rmnet0.dns1 9.9.9.9
+setprop net.rmnet0.dns2 149.112.112.112
 
-setprop net.rmnet1.dns1 1.1.1.1
-setprop net.rmnet1.dns2 1.0.0.1
+setprop net.rmnet1.dns1 9.9.9.9
+setprop net.rmnet1.dns2 149.112.112.112
 
-setprop net.pdpbr1.dns1 1.1.1.1
-setprop net.pdpbr1.dns2 1.0.0.1
+setprop net.pdpbr1.dns1 9.9.9.9
+setprop net.pdpbr1.dns2 149.112.112.112
 
-setprop 2606:4700:4700::1111
-setprop 2606:4700:4700::1001
+setprop 2620:fe::fe
+setprop 2620:fe::9
 
 
 
@@ -34,6 +34,6 @@ setprop 2606:4700:4700::1001
 
 if [ -a /system/etc/resolv.conf ]; then
 	mkdir -p $MODDIR/system/etc/
-	printf "nameserver 1.1.1.1\nnameserver 1.0.0.1" >> $MODDIR/system/etc/resolv.conf
+	printf "nameserver 9.9.9.9\nnameserver 149.112.112.112" >> $MODDIR/system/etc/resolv.conf
 	chmod 644 $MODDIR/system/etc/resolv.conf
 fi
